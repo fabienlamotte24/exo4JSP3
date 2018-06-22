@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Exercice 4</title>
+</head>
+<body>
+  <form>
+    <label for="password">Votre mot de passe : </label><input type="text" name="password" id="password" />
+    <label for="confirmPassword">Confirmez : </label><input type="text" name="confirmPassword" id="confirmPassword" />
+    <button type="button" name="button" onclick="passKey()">Vérification</button>
+  </form>
+  <script>
+  //Déclaration de la fonction passKey//
+    function passKey(){
+      //Récupération des valeur de champs dans les valeurs pass et confPass//
+      var pass = document.getElementById("password");
+      var confPass = document.getElementById("confirmPassword");
+      //Première condition si les deux valeurs sont identiques//
+        if(pass.value == confPass.value){
+          password.style.borderColor = "green";
+          confirmPassword.style.borderColor = "green";
+        } else/*deusieme condition si elles sont différentes*/{
+          password.style.borderColor = "red";
+          confirmPassword.style.borderColor = "red";
+        }
+    }
+  </script>
+</body>
+</html>
